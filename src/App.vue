@@ -10,10 +10,6 @@ const setDateTime = setInterval(() => {
   const hourTimer = ref(date.value.getHours())
   const minTimer = ref(date.value.getMinutes())
   const secTimer = ref(date.value.getSeconds())
-  
-  hours.value = hourTimer.value
-  mins.value = minTimer.value
-  secs.value = secTimer.value
 
   hours.value = hourTimer.value < 10 ? "0" + hourTimer.value : hourTimer.value
   mins.value = minTimer.value < 10 ? "0" + minTimer.value : minTimer.value
